@@ -1,0 +1,109 @@
+@media screen and (min-width: 480px) {
+  body {
+    min-width: 1030px;
+  }
+  .container {
+    width: 103rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .sub-title {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+  header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header h1 {
+    line-height: normal;
+  }
+  header .container {
+    width: 1200px;
+  }
+  header .header-nav .hamburger-menu {
+    display: none;
+  }
+  header .header-nav .menu {
+    display: block;
+    width: 27rem;
+  }
+  header .header-nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-nav .menu ul li > a {
+    color: #fff;
+    font-size: 1.6rem;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  header .header-nav .menu ul li > a:hover {
+    color: #b3b3b3;
+  }
+  .top {
+    min-height: 74rem;
+    height: 50vw;
+    background-image: url("../img/fv-bgi@2x.jpg");
+  }
+  .service {
+    width: 100%;
+    height: 24rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service .service-text {
+    width: 48rem;
+  }
+  .service .service-image {
+    width: 48rem;
+    height: 100%;
+    margin-top: 0;
+  }
+  .service:nth-of-type(1) .service-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .newses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .news {
+    width: 32rem;
+    -webkit-box-shadow: 0 0 0.6rem rgba(27, 19, 16, 0.4);
+            box-shadow: 0 0 0.6rem rgba(27, 19, 16, 0.4);
+    margin: 0;
+  }
+  .news:nth-of-type(n + 2) {
+    margin-top: 0;
+  }
+  .contact {
+    width: 70rem;
+    margin: 0 auto;
+  }
+  footer {
+    height: 8rem;
+  }
+}
+/*# sourceMappingURL=pc-size.css.map */

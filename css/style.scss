@@ -1,0 +1,274 @@
+body {
+  // width: 37.5rem;
+  // width: 100%;
+  min-width: 375px;
+}
+
+// 共通
+.container {
+  width: 37.5rem;
+  padding: 0 1.5rem;
+}
+.container > section {
+  padding: 10rem 0 5rem 0;
+}
+.title {
+  font-size: 3.6rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 7rem;
+  font-weight: bold;
+  text-align: center;
+}
+.sub-title {
+  font-family: "noto sans cjk jp", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+.read {
+  font-family: "noto sans cjk jp", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  line-height: 3rem;
+}
+
+// header
+header {
+  width: 37.5rem;
+  background-color: #1b1310;
+  height: 7.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #fff;
+
+  .header-nav {
+    // height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: center;
+  }
+  $y: 2px;
+  $x: 16px;
+  h1 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 7.5rem;
+  }
+  .hamburger-menu {
+    width: 2.5rem;
+    height: 1.6rem;
+    // x=1.6rem;
+    cursor: pointer;
+    margin-top: 25px;
+    position: relative;
+
+    .humbergar-menu-line,
+    .humbergar-menu-line::before,
+    .humbergar-menu-line::after {
+      z-index: 100;
+      transition: 0.2s;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 0.2rem;
+      // y=0.2rem;
+
+      background: #fff;
+    }
+    .humbergar-menu-line::before,
+    .humbergar-menu-line::after {
+      content: "";
+    }
+
+    .humbergar-menu-line {
+      top: 0;
+    }
+
+    .humbergar-menu-line::before {
+      // (x-y)/2
+      // top: 0.7rem;
+      top: calc((#{$x} - #{$y}) / 2);
+    }
+
+    .humbergar-menu-line::after {
+      // x-y
+      // top: 1.4rem;
+      top: calc(#{$x} - #{$y)};
+    }
+
+    #check:checked ~ .humbergar-menu-line::before {
+      display: none;
+    }
+    #check:checked ~ .humbergar-menu-line {
+      z-index: 10;
+      transform: rotate(45deg);
+      top: 0.7rem;
+    }
+    #check:checked ~ .humbergar-menu-line::after {
+      top: 0;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .nav-page {
+    width: 37.5rem;
+    height: 66.5rem;
+    background-color: #1b1310;
+    position: relative;
+    left: -33.5rem;
+    bottom: 69rem;
+    transition: 1s;
+    // display: none;
+    nav {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        height: 24.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          a {
+            color: #fff;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  #check:checked ~ .nav-page {
+    bottom: 2.5rem;
+  }
+}
+// end of header
+//top
+.top {
+  height: 66.5rem;
+  background-image: url("../img/fv-bgi_sp@2x.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .top-text {
+    width: 30rem;
+    height: 10rem;
+    border: 0.2rem solid #fff;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    line-height: 10rem;
+  }
+}
+// end of top
+
+// service
+.service-image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  margin-top: 4rem;
+}
+.service:nth-of-type(2) {
+  margin-top: 5rem;
+}
+//end service
+
+// news
+.news {
+  width: 32rem;
+  box-shadow: 0 0 0.6rem rgba(27, 19, 16, 0.4);
+  margin: 0 auto;
+
+  .text-box {
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+
+    .news-text {
+      width: 25.5rem;
+      font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W6",
+        sans-serif;
+      font-size: 1.3rem;
+      line-height: 1.92;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+.news:nth-of-type(n + 2) {
+  margin-top: 5rem;
+}
+// end of news
+
+// contact
+.contact {
+  width: 100%;
+  label {
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W6", sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  label,
+  input,
+  textarea {
+    font-size: 1.6rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-color: #141414;
+  }
+
+  input {
+    margin-bottom: 2.2rem;
+    height: 3rem;
+  }
+
+  textarea {
+    height: 17rem;
+  }
+
+  div {
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+
+    button {
+      width: 23.5rem;
+      height: 6rem;
+      background-color: #1b1310;
+      border-radius: 3rem;
+      color: #fff;
+      font-size: 2rem;
+      box-shadow: 0 0 0.6rem #1b1310;
+    }
+  }
+}
+//end of contact
+
+// footer
+footer {
+  background-color: #1b1310;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+  }
+}
+// end of footer

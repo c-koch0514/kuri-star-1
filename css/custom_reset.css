@@ -1,0 +1,51 @@
+html {
+  font-size: 62.5%;
+  /* width: 375px; */
+}
+
+body {
+  font-family: "Roboto", "noto sans cjk jp", "Noto Sans JP", sans-serif;
+  font-style: normal;
+  color: #141414;
+}
+
+b,
+strong,
+.bold {
+  font-family: "Roboto", sans-serif, "Noto Sans JP", sans-serif;
+  font-style: normal;
+  /* bold */
+  font-weight: 700;
+}
+
+/* デフォルトのボールド指定を解除 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  vertical-align: bottom;
+  /* float: left; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border: 1px solid #000;
+}
+
+button:focus {
+  outline: none;
+}

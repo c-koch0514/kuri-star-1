@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クリ★スタ</title>
+  <meta name="description" content="クリ★スタLP模写">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/custom_reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/pc-size.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-nav container">
+      <h1>クリ★スタ</h1>
+      <!-- hamburgerメニュー -->
+      <label class="hamburger-menu" for="check">
+        <input type="checkbox" id="check" hidden>
+        <span class="humbergar-menu-line"></span>
+        <div class="nav-page">
+          <nav>
+            <ul>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#service">Service</a>
+              </li>
+              <li>
+                <a href="#news">News</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </label>
+      <!-- 普通のメニュー -->
+      <nav class="menu" hidden>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#service">Service</a>
+          </li>
+          <li>
+            <a href="#news">Contents</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="top">
+    <h1 class="top-text">Cresta Design.</h1>
+  </div>
+
+  <main class="container">
+    <section id="about">
+      <h1 class="title">About</h1>
+      <h2 class="sub-title">ミニマルで<br>洗練されたデザインを。</h2>
+      <p class="read">
+        近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+      </p>
+    </section>
+
+    <section id="service">
+      <h1 class="title">Service</h1>
+
+      <section class="service">
+        <div class="service-text">
+          <h1 class="sub-title">リリース時のサポートで<br>サービスのブランディングを</h1>
+          <p class="read">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+        </div>
+        <img src="./img/service-image@2x.jpg" alt="カメラの写真です。" class="service-image">
+      </section>
+
+      <section class="service">
+        <div class="service-text">
+          <h1 class="sub-title">リリース後のサポートで<br>効果を最大化させる</h1>
+          <p class="read">弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+        </div>
+        <img src="./img/service-image02@2x.jpg" alt="スマートフォンの写真です" class="service-image">
+      </section>
+    </section>
+
+    <section id="news">
+      <h1 class="title">News</h1>
+      <div class="newses">
+        <div class="news">
+          <img src="./img/card-image1@2x.jpg" alt="おしゃれな写真1">
+          <div class="text-box">
+            <p class="news-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+        </div>
+        <div class="news">
+          <img src="./img/card-image2@2x.jpg" alt="おしゃれな写真2">
+          <div class="text-box">
+            <p class="news-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+        </div>
+        <div class="news">
+          <img src="./img/card-image3@2x.jpg" alt="おしゃれな写真3">
+          <div class="text-box">
+            <p class="news-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">お問い合わせ</h1>
+      <form action="#" class="contact">
+        <label for="name">担当者名</label>
+        <input type="text" id="name">
+        <label for="phone">電話番号</label>
+        <input type="number" id="phone">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email">
+        <label for="content">お問い合わせ内容</label>
+        <textarea id="content"></textarea>
+        <div>
+          <button>送信</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>©︎crest.design all rights reserved</p>
+  </footer>
+
+</body>
+
+</html>
